@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div id="screen"></div>
+        <!-- <div class="buttons">
+            <button class="b1">7</button>
+            <button class="b2">8</button>
+            <button class="b3">9</button>
+            <button class="b4">C</button>
+            <button class="b5">4</button>
+            <button class="b6">5</button>
+            <button class="b7">6</button>
+            <button class="b8">+</button>
+            <button class="b9">1</button>
+            <button class="b10">2</button>
+            <button class="b11">3</button>
+            <button class="b12">-</button>
+            <button class="b13">0</button>
+            <button class="b14">x</button>
+            <button class="b15">/</button>
+            <button class="b16">=</button>
+        </div> -->
+        <table class="buttons" cellpadding="6">
+            <tr>
+                <td><center><button onclick="coming_value('7')" class="b1">7</button><center></td>
+                <td><center><button onclick="coming_value('8')" class="b1">8</button><center></td>
+                <td><center><button onclick="coming_value(9)" class="b1">9</button><center></td>
+                <td><center><button onclick="clear_all()" class="b1">C</button><center></td>
+            </tr>
+            <tr>
+                <td><center><button onclick="coming_value('4')" class="b1">4</button><center></td>
+                <td><center><button onclick="coming_value('5')" class="b1">5</button><center></td>
+                <td><center><button onclick="coming_value('6')" class="b1">6</button><center></td>
+                <td><center><button onclick="operator('+')" class="b1">+</button><center></td>
+            </tr>
+            <tr>
+                <td><center><button onclick="coming_value('1')" class="b1">1</button><center></td>
+                <td><center><button onclick="coming_value('2')" class="b1">2</button><center></td>
+                <td><center><button onclick="coming_value('3')" class="b1">3</button><center></td>
+                <td><center><button onclick="operator('-')" class="b1">-</button><center></td>
+            </tr>
+            <tr>
+                <td><center><button onclick="coming_value('0')" class="b1">0</button><center></td>
+                <td><center><button onclick="operator('*')" class="b1">*</button><center></td>
+                <td><center><button onclick="operator('/')" class="b1">/</button><center></td>
+                <td><center><button onclick="answer()" class="b1">=</button><center></td>
+            </tr>
+        </table>
+    </div>
+<script src="calculator.js"></script>
+</body>
+</html>
